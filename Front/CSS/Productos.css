@@ -1,0 +1,80 @@
+body{
+  width: 100%;
+    height: 100%;
+}
+
+.bar{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+#formAgregar input {
+    width: 400px;
+    
+}
+#formAgregar button{
+    width: 100px;
+
+}
+#formAgregar{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+
+}
+
+#mensaje{
+    color: red;
+    font-size: 17px;
+    font-weight: bold;
+}
+.botonesEditar{
+    display: none;
+}
+.container-agregar{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-rojo {
+    background-color: red;
+  }
+  
+  .bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bar h2 {
+    flex-grow: 1;
+    text-align: center; /* Centra el texto del h2 */
+  }
+  
+  
+  .filtro-busqueda {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Mueve el filtro hacia la izquierda */
+    margin-right: 10px; /* Agrega un espacio entre el botón y el campo de búsqueda */
+  }
+  
+  #searchInput {
+    margin-right: 5px; /* Ajusta el espacio entre el campo de búsqueda y el botón */
+    border-radius: 10px; /* Agrega bordes redondos al input */
+  }
+  

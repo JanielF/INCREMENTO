@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Productos.css">
+
+
+    <title>Productos</title>
+</head>
+
+<body>
+
+    <nav class="bar">
+        <h2>Productos</h2>
+        <div class="filtro-busqueda">
+            <input type="text" id="searchInput" placeholder="Buscar producto">  
+            <button id="botonBuscar" type="submit" class="btn btn-success"><i class="ri-search-line"></i></button>
+        </div>
+    </nav>
+    
+    
+
+    <!-- Formulario Agregar -->
+    <div class="container-agregar">
+        <form id="formAgregar" action="POST">
+            <label for="nombre">Nombre</label>
+            <input class="form-control" type="text" placeholder="Producto" aria-label="default input example"
+                id="nombre">
+            <label for="precio">Precio</label>
+            <input class="form-control" type="number" placeholder="Precio" aria-label="default input example"
+                id="precio">
+            <label for="cantidad">Cantidad</label>
+            <input class="form-control" type="number" placeholder="Cantidad" aria-label="default input example"
+                id="cantidad">
+            <p id="mensaje"></p>
+            <div class="botones">
+                <div class="botonesGuardar" id="botonesGuardar">
+                    <button id="botonGuardar" type="submit" class="btn btn-primary"><i
+                            class="ri-save-line"></i></button>
+                </div>
+                <div class="botonesEditar" id="botonesEditar">
+                    <button id="botonEditar" type="submit" class="btn btn-success"><i class="ri-save-line"></i></button>
+                    <button id="cancelarEdicion" type="button" class="btn btn-danger"><i
+                            class="ri-close-line"></i></button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <!-- Tabla -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Acción</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+
+        </tbody>
+
+    </table>
+
+
+    <script src="../JS/Productos.js"></script>
+
+</body>
+
+</html>
